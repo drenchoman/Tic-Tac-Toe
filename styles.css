@@ -1,0 +1,371 @@
+/* Create grid */
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #aee6e6;
+  margin: 0;
+}
+
+button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+/* should be changed to grid */
+#wrapper {
+  display: none;
+  /* grid-gap: 1em; */
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  width: 50%;
+  height: 60vh;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.square {
+  padding: 1em;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.square:hover {
+  background-color: #fbf6f0;
+}
+
+.header{
+  display: none;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.green{
+  background-color: #ff8e71;
+  font-size: 2.5vw
+}
+
+.red{
+  background-color: #9f5f80;
+  font-size: 2.5vw
+}
+
+
+
+.sS{
+  display: none;
+  align-items: stretch;
+  justify-content: space-between;
+  /* align-content: space-between; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 30vw;
+  height: 95vh;
+  margin: 10px auto;
+  border: 5px solid black;
+  text-align: center;
+  background-color: #ffba93
+}
+.selectorScreen{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+}
+.playerSelection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+
+.selectorDiv{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.selectorDiv2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.markerDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.markerSelection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-shrink: 1;
+}
+.markerDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.markerDisplay2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.playDiv {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+
+}
+
+.btn{
+width: 60px;
+height: 60px;
+border: solid 1px black;
+background-color: #fbf6f0
+}
+
+.playButton{
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #ff8e71;
+  border: 5px solid black;
+  color: black;
+  flex-shrink: 1;
+}
+.playButton:hover{
+  background-color: #9f5f80;
+  color: white;
+}
+
+.active, .btn:hover {
+  background-color: #ff8e71;
+  color: white;
+}
+
+.active2 {
+  background-color: #ff8e71;
+  color: white;
+}
+
+.active3 {
+  background-color: #ff8e71;
+  color: white;
+}
+.active4 {
+  background-color: #ff8e71;
+  color: white;
+}
+
+.notarget {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Hide Reset & play again buttons */
+.play{
+  display: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #ff8e71;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+}
+.reset{
+  display: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background-color: #ff8e71;
+  border: 5px solid black;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.play:hover {
+  background-color: #9f5f80;
+  color: white;
+}
+.reset:hover {
+  background-color: #9f5f80;
+  color: white;
+}
+
+.playAgain{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+
+/* Welcome title */
+.welcome{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+}
+
+.welcomeButton{
+  height: 18vh;
+  width: 9vw;
+  border-radius: 100%;
+  background-color: #FFBA93;
+  border: 5px solid black;
+  color: black;
+  animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+.welcomeButton:hover{
+  background-color: #9f5f80;
+  color: white;
+
+}
+
+.welcomeTitle{
+  font-size: 7vw;
+  text-shadow: 5px 5px 0px rgba(159,95,128,0.96);
+  color: #FFBA93;
+  animation: fadein 2.5s;
+    -moz-animation: fadein 2.5s; /* Firefox */
+    -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+    -o-animation: fadein 2.5s; /* Opera */
+}
+/* Title fadein */
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+
+/* Media queries */
+
+/* For Phone */
+
+@media only screen and (max-width: 600px) {
+  .sS{
+
+    width: 90vw;
+    height: 85vh;
+    margin: 5vh auto 5vh;
+
+  }
+  #wrapper{
+    height: 35vh;
+    width: 80vw;
+  }
+  .green{
+    font-size: 5.5vw
+  }
+
+  .red{
+    font-size: 5.5vw
+  }
+  .welcomeButton{
+    height: 12vh;
+    width: 25vw;
+
+  }
+  .welcomeTitle{
+    font-size: 12vw;
+
+  }
+  .playButton{
+    font-size: 4.5vw;
+  }
+}
+
+/* For ipadS */
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+  .sS{
+
+    width: 90vw;
+    height: 85vh;
+    margin: 5vh auto 5vh;
+
+  }
+  #wrapper{
+    height: 50vh;
+    width: 80vw;
+    margin: 5vh auto 5vh
+  }
+  .green{
+    font-size: 5.5vw
+  }
+
+  .red{
+    font-size: 5.5vw
+  }
+  .welcomeButton{
+    height: 18vh;
+    width: 25vw;
+    font-size: 4vw;
+  }
+  .welcomeTitle{
+    font-size: 13vw;
+
+  }
+  .play{
+    height: 15vh;
+    width: 20vw;
+    font-size: 3vw;
+  }
+  .reset{
+    height: 15vh;
+    width: 20vw;
+    font-size: 3vw;
+  }
+  .header >h1{
+    font-size: 8vw;
+  }
+  .btn{
+    width: 12vw;
+    height: 10vh;
+    font-size: 2.5vw;
+  }
+  .playButton{
+    width: 20vw;
+    height: 15vh;
+    font-size: 4vw;
+  }
+  .sS >h1{
+    font-size: 6vw;
+  }
+  .sS > h2 {
+    font-size: 3.5vw;
+  }
+
+}​
