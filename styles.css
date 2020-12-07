@@ -279,8 +279,8 @@ background-color: #fbf6f0
   .sS{
 
     width: 90vw;
-    height: 85vh;
-    margin: 5vh auto 5vh;
+    height: 80vh;
+    margin: 3vh auto 3vh;
 
   }
   #wrapper{
@@ -288,7 +288,7 @@ background-color: #fbf6f0
     width: 80vw;
   }
   .green{
-    font-size: 5.5vw
+    font-size: 5.7vw
   }
 
   .red{
@@ -312,9 +312,9 @@ background-color: #fbf6f0
 @media only screen and (min-width: 750px) and (max-width: 1024px) {
   .sS{
 
-    width: 90vw;
+    width: 95vw;
     height: 85vh;
-    margin: 5vh auto 5vh;
+    margin: 2vh auto 2vh;
 
   }
   #wrapper{
